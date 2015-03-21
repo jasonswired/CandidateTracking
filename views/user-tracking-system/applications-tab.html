@@ -1,0 +1,7 @@
+<section ng-controller="utsApplicationsController">
+  <div class="col-xs-4" ng-controller="utsApplicationsGridController">
+    <div ui-grid="gridOptions" ui-grid-selection ui-grid-auto-resize></div>
+  </div>
+
+  <div ng-include="'views/user-tracking-system/application-form.html'" class="col-xs-8"></div>
+</section>

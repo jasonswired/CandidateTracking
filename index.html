@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="vendors/angular-ui-grid/ui-grid.css">
+  <!-- endbuild -->
+</head>
+<body ng-app="actsApp">
+<h3>Armedia Candidate Tracking System</h3>
+<div ng-include="'views/user-tracking-system/user-tracking-system.html'">
+</div>
+
+<!-- build:js(.) scripts/oldieshim.js -->
+<!--[if lt IE 9]>
+<script src="vendors/es5-shim/es5-shim.js"></script>
+<script src="vendors/json3/lib/json3.js"></script>
+<![endif]-->
+<!-- endbuild -->
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="vendors/jquery/dist/jquery.js"></script>
+<script src="vendors/angular/angular.js"></script>
+<script src="vendors/angular-animate/angular-animate.js"></script>
+<script src="vendors/angular-cookies/angular-cookies.js"></script>
+<script src="vendors/angular-resource/angular-resource.js"></script>
+<script src="vendors/angular-route/angular-route.js"></script>
+<script src="vendors/angular-sanitize/angular-sanitize.js"></script>
+<script src="vendors/angular-touch/angular-touch.js"></script>
+<script src="vendors/angular-ui-grid/ui-grid.js"></script>
+<script src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<script src="vendors/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/uts-controller.js"></script>
+<script src="scripts/controllers/uts-home-controller.js"></script>
+
+<script src="scripts/controllers/uts-applications-controller.js"></script>
+<script src="scripts/controllers/uts-application-form-controller.js"></script>
+<script src="scripts/controllers/uts-applications-grid-controller.js"></script>
+
+<script src="scripts/controllers/uts-positions-controller.js"></script>
+<script src="scripts/controllers/uts-position-form-controller.js"></script>
+<script src="scripts/controllers/uts-positions-grid-controller.js"></script>
+
+<script src="scripts/controllers/uts-candidates-controller.js"></script>
+<script src="scripts/controllers/uts-candidate-form-controller.js"></script>
+<script src="scripts/controllers/uts-candidates-grid-controller.js"></script>
+
+<script src="scripts/services/acts-service.js"></script>
+<script src="scripts/filters/applications-filter.js"></script>
+<script src="scripts/filters/clean-metadata-filter.js"></script>
+<script src="scripts/filters/clean-date-filter.js"></script>
+<script src="scripts/filters/html-to-plain-filter.js"></script>
+
+<!-- endbuild -->
+</body>
+</html>
