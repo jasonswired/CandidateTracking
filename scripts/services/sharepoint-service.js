@@ -8,15 +8,17 @@
  * Service in the actsApp.
  */
 angular.module('actsApp')
-  .service('SharepointService', function () {
+  .service('SharepointService', function ($http) {
     $scope.getContext = function () {
       console.log('Get Sharepoint context');
     }
 
-    $scope.getLists = function (){
-
+    $scope.getListItems = function (listName, siteUrl){ //get sharepoint list items via list name and site url
+    	if(typeof siteUrl == 'undefined'){
+			siteUrl = _spPageContextInfo.webAbsoluteUrl;
+		}
+		return $http.get(siteUrl+"/_api/lists/getbytitle('"+listName+"')/items?$select=*");
     }
-
 
     $scope.getLists = function() {
 
